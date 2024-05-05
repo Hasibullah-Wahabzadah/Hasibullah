@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="fa">
         <Head>
-        <title>Hasibullah Wahabzdeh</title>
+        <title> Hasibullah Wahabzdeh </title>
           <link rel="icon" href="/vs1.png" />
           {/* دیگر تنظیمات هدر */}
         </Head>

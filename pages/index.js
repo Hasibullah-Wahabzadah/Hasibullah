@@ -2,42 +2,9 @@ import Typewriter from 'typewriter-effect';
 import ProjectsBtn from '../components/ProjectsBtn'
 import { easeInOut, motion } from 'framer-motion';
 import Avatar from '../components/Avatar';
+import {fadeIn } from '../variants';
 import ParticlesContainer from '../components/ParticlesContainer';
-// import ParticlesContainer from '../components/ParticlesContainer';
-
-export const fadeIn = (direction, delay) => {
-  return {
-    hidden: {
-      y: direction === 'up' ? 80 : direction === 'down' ? -80 : 0,
-      opacity: 0,
-      x: direction === 'left' ? 80 : direction === 'right' ? -80 : 0,
-      transition: {
-        type: 'tween',
-        duration: 1.5,
-        delay: delay,
-        ease: [0.25, 0.6, 0.3, 0.8],
-      },
-    },
-    show: {
-      y: 0,
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: 'tween',
-        duration: 1.4,
-        delay: delay,
-        ease: [0.25, 0.25, 0.25, 0.75],
-      }
-    },
-  };
-};
-// const fadeIn = (direction, duration) => {
-//   return {
-//     hidden: { opacity: 0, y: direction === 'down' ? -50 : 50 },
-//     show: { opacity: 1, y: 0, transition: { duration: duration } },
-//     exit: { opacity: 0, y: direction === 'down' ? -50 : 50, transition: { duration: duration } },
-//   };
-// };
+import Image from 'next/image';
 
 const Home = () => {
 
@@ -84,8 +51,9 @@ const Home = () => {
             I am a Web Developer, Web Designer, and UI/UX Implementation professional responsible for designing, developing, and implementing beautiful and effective websites and applications.
           </motion.p>
           {/* btn  */}
-          <div className='flex justify-center xl:hidden relative'>
-            <ProjectsBtn />
+          <div className='flex justify-center xl:hidden '>
+            {/* <ProjectsBtn /> */}
+            <Avatar />
           </div>
           <motion.div
             variants={fadeIn('down', 0.4)}
@@ -104,9 +72,10 @@ const Home = () => {
       {/* image  */}
       <div className='w-[1200px] h-full absolute right-0 bottom-0'>
         {/* bg img  */}
-        <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right
+        <div className='bg-none  xl:bg-explosion xl:bg-cover xl:bg-right
         xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0
         '></div>
+      
         {/* particles  */}
        <ParticlesContainer/>
         {/* avatar img  */}
