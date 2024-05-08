@@ -21,6 +21,8 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaGitAlt,
+  FaGithubSquare
 } from "react-icons/fa";
 
 import {
@@ -45,7 +47,8 @@ const aboutData = [
           <SiTailwindcss />,
           <FaJs />,
           <FaReact />,
-          <FaWordpress />,
+          <FaGitAlt />,
+          <FaGithubSquare/>
         ],
       },
       {
@@ -55,7 +58,7 @@ const aboutData = [
     ],
   },
   {
-    title: 'awards',
+    title: 'experience',
     info: [
       {
         title: 'CS OF CS at Herat University',
@@ -72,39 +75,35 @@ const aboutData = [
     ],
   },
   {
-    title: 'experience',
+    title: 'awards',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Wassa code4Fun Web class',
+        stage: 'Certificate',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Ghalib University - Programming class',
+        stage: 'Certificate',
       },
     ],
   },
-  {
-    title: 'credentials',
-    info: [
-      {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
-      },
-    ],
-  },
+  // {
+  //   title: 'credentials',
+  //   info: [
+  //     {
+  //       title: 'Web Development - ABC University, LA, CA',
+  //       stage: '2011',
+  //     },
+  //     {
+  //       title: 'Computer Science Diploma - AV Technical Institute',
+  //       stage: '2009',
+  //     },
+  //     {
+  //       title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
+  //       stage: '2006',
+  //     },
+  //   ],
+  // },
 ];
 
 const About = () => {
@@ -124,7 +123,7 @@ const About = () => {
       </motion.div>
       <div className="container mx-auto  flex flex-col items-center xl:flex-row gap-x-6 py-11">
         {/* text  */}
-        <div className=" flex-1 flex-col  flex justify-center">
+        <div className=" flex-1 flex-col  flex justify-center ">
           <motion.h2 
           variants={fadeIn('right', 0, 2)}
           initial='hidden'
@@ -136,8 +135,7 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">Responsive websites: Figma constraints are supported.Breakpoints (Media queries): When opening from mobile or desktop, users will always get to the right artboard.
-            Videos: Add Youtube/MP4/GIF/Lottie to your site.
+          className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 items-center ">By providing professional website design services, I can help you take your brand and business to a new level of recognition and success. With a beautiful, unique, and efficient website, you can achieve sustainable growth and development for your business and elevate its marketing to a higher level. With my experience and necessary expertise, I am ready to collaborate with you to create a strong and engaging online presence.
           </motion.p>
           {/* Computer  */}
           <motion.div 
@@ -145,8 +143,8 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className=" md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-9 ">
-            <div className="flex flex-1 xl:gap-x-6">
+          className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-9 ">
+            <div className="flex flex-1 xl:gap-x-6 ">
               {/* experience */}
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <di v className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -168,9 +166,9 @@ const About = () => {
 
               {/* projects */}
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <di v className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={650} duration={5} /> +
-                </di>
+                </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px]">
                   Finisihed projects 
                 </div>
@@ -195,7 +193,7 @@ const About = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className="flex flex-col w-full xl:max-w-[48%] h-[480px] sm:py-16 pl-6">
+        className="flex flex-col w-full xl:max-w-[48%] h-[490px] sm:py-2 pl-9">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
@@ -213,15 +211,16 @@ const About = () => {
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
-                  className="flex-1 flex flex-col md:flex-row  gap-x-2 items-center text-gray-400"
+                  className="flex-1 flex flex-col md:flex-row  gap-x-2 items-center text-white/60"
                   key={itemIndex}>
                   {/* title */}
-                  <div>{item.title}</div>
-                  <div className="hidden md:flex">{item.stage}</div>
+                  <div className=" font-light">{item.title}</div>
+                  <br/>
+                  <div className="text-white truncate">{item.stage}</div>
                   {/* icons */}
                   <div className="flex flex-wrap justify-center md:justify-start gap-x-2">
                     {item.icons?.map((icon, iconIndex) => (
-                      <div key={iconIndex} className="m-1 text-2xl">
+                      <div key={iconIndex} className="m-1 text-2xl text-white">
                         {icon}
                       </div>
                     ))}

@@ -29,7 +29,7 @@ const Services = () => {
             animate='show'
             exit='hidden'
             className="mb-4 max-w-[400px] mx-auto lg:mx-0"> 
-              Figma constraints are supported.Breakpoints (Media queries): When opening from mobile or desktop, users will always get to the right artboard.
+              I strive to help businesses thrive by providing the best services to their customers and ensuring their satisfaction so they can succeed in their ventures.
               </motion.p>
           </div>
           {/* Slider */}
