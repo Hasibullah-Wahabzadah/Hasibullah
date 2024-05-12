@@ -16,7 +16,7 @@ const workSlides = {
         {
           title: 'title',
           path: '/3.jpg',
-          link: 'https://github.com/Hasibullah-Wahabzadah/4-admin-panel/'
+          link: 'https://hasibullah-wahabzadah.github.io/4-admin-panel/'
         },
         {
           title: 'title',
