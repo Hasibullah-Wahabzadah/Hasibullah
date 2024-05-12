@@ -48,7 +48,7 @@ const aboutData = [
           <FaJs />,
           <FaReact />,
           <FaGitAlt />,
-          <FaGithubSquare/>
+          <FaGithubSquare />
         ],
       },
       {
@@ -110,7 +110,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-36 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-[190px] text-center xl:text-left">
       <Circles />
       {/* avatar img  */}
       <motion.div
@@ -121,36 +121,38 @@ const About = () => {
         className=' hidden xl:flex absolute bottom-[400px] -left-[245px]'>
         <Avatar />
       </motion.div>
-      <div className="container mx-auto  flex flex-col items-center xl:flex-row gap-x-6 py-11">
+      <div className="container mx-auto  flex flex-col items-center xl:flex-row gap-x-6 py-1">
         {/* text  */}
         <div className=" flex-1 flex-col  flex justify-center ">
-          <motion.h2 
-          variants={fadeIn('right', 0, 2)}
-          initial='hidden'
-          animate='show'
-          exit='hidden'
-          className="text-4xl">Turning ideas into reality is what I do as a<span className=" text-accent"> Web Developer</span></motion.h2>
-          <motion.p 
-          variants={fadeIn('right', 0, 4)}
-          initial='hidden'
-          animate='show'
-          exit='hidden'
-          className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 items-center ">By providing professional website design services, I can help you take your brand and business to a new level of recognition and success. With a beautiful, unique, and efficient website, you can achieve sustainable growth and development for your business and elevate its marketing to a higher level. With my experience and necessary expertise, I am ready to collaborate with you to create a strong and engaging online presence.
+          <motion.h2
+            variants={fadeIn('right', 0, 2)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className="text-2xl sm:text-4xl">Turning ideas into reality is what I do as a<span className=" text-accent"> Web Developer</span></motion.h2>
+          <motion.p
+            variants={fadeIn('right', 0, 4)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-4 xl:mt-3  items-center ">
+            With my professional website design services, you can take your brand and business to a new level of recognition and success. With a beautiful, unique, and efficient website, you can achieve sustainable growth for your business and elevate its marketing to a higher level.
           </motion.p>
           {/* Computer  */}
-          <motion.div 
-          variants={fadeIn('right', 0, 6)}
-          initial='hidden'
-          animate='show'
-          exit='hidden'
-          className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-9 ">
+          <motion.div
+            variants={fadeIn('right', 0, 6)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-9 ">
             <div className="flex flex-1 xl:gap-x-6 ">
               {/* experience */}
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <di v className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={2} duration={5} /> +
                 </di>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px]">Years of experience
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px]">
+                  Years of experience
                 </div>
               </div>
 
@@ -170,12 +172,12 @@ const About = () => {
                   <CountUp start={0} end={650} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px]">
-                  Finisihed projects 
+                  Finisihed projects
                 </div>
               </div>
 
-               {/* awards */}
-               <div className=" relative flex-1 ">
+              {/* awards */}
+              <div className=" relative flex-1 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={2} duration={5} /> +
                 </div>
@@ -188,13 +190,13 @@ const About = () => {
           </motion.div>
         </div>
         {/* info  */}
-        <motion.div 
-        variants={fadeIn('left', 0, 4)}
-        initial='hidden'
-        animate='show'
-        exit='hidden'
-        className="flex flex-col w-full xl:max-w-[48%] h-[490px] sm:py-2 pl-9">
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+        <motion.div
+          variants={fadeIn('left', 0, 4)}
+          initial='hidden'
+          animate='show'
+          exit='hidden'
+          className="flex flex-col w-full xl:max-w-[48%] h-[380px] sm:py-2 pl-9">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-2">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
@@ -215,7 +217,7 @@ const About = () => {
                   key={itemIndex}>
                   {/* title */}
                   <div className=" font-light">{item.title}</div>
-                  <br/>
+                  <br />
                   <div className="text-white truncate">{item.stage}</div>
                   {/* icons */}
                   <div className="flex flex-wrap justify-center md:justify-start gap-x-2">

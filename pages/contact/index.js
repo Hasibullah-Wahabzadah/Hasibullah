@@ -1,5 +1,6 @@
 // components
 import Circles from '/components/Circles'
+import api from '../api/hello'
 
 // icon 
 import { BsArrowRight } from 'react-icons/bs'
@@ -29,7 +30,7 @@ const Contact = () => {
             <input type='email' placeholder='email' className='input' />
             <textarea placeholder='message' className='textarea'></textarea>
             <button className='btn rounded-full border  border-l-8 overflow-hidden  border-white/20 text-white text-xl cursor-pointer relative z-10 group '>
-              Let's talk
+              Let's go
               <span
                 className="absolute w-full h-[620px] -top-5 -left-2 bg-red-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-right"
               ></span>

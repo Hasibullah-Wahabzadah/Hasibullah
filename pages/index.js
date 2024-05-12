@@ -9,7 +9,7 @@ import Image from 'next/image';
 const Home = () => {
 
   return (
-    <div className="bg-primary/60 h-full">
+    <div className="bg-primary/60 h-full ">
       {/* text */}
       <div className=' w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
         <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left
@@ -20,12 +20,12 @@ const Home = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className=" sm:text-3xl">
+          className="text-2xl sm:text-3xl -mt-16">
             Hi! I'm Hasibullah Wahabzadah <br /> And I'm
             <span className="text-accent" >
               <Typewriter
                 options={{
-                  strings: ['Web Developer', 'Web Designer', 'UI/UX Implementation'],
+                  strings: ['Web Developer', 'Front-end Developer', 'UI/UX Implementation'],
                   autoStart: true,
                   loop: true,
                   delay: 100,
@@ -51,9 +51,9 @@ const Home = () => {
             I am a Web Developer, Web Designer, and UI/UX Implementation professional responsible for designing, developing, and implementing beautiful and effective websites and applications.
           </motion.p>
           {/* btn  */}
-          <div className='flex justify-center xl:hidden '>
+          <div className='flex justify-center xl:hidden z-40'>
             {/* <ProjectsBtn /> */}
-            <Avatar />
+            <Avatar  />
           </div>
           <motion.div
             variants={fadeIn('down', 0.4)}
@@ -72,8 +72,8 @@ const Home = () => {
       {/* image  */}
       <div className='w-[1200px] h-full absolute right-0 bottom-0'>
         {/* bg img  */}
-        <div className='bg-none  xl:bg-explosion xl:bg-cover xl:bg-right
-        xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0
+        <div className='bg-explosion bg-cover bg-right
+        bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0
         '></div>
       
         {/* particles  */}
