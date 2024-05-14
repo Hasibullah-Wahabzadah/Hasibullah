@@ -21,14 +21,14 @@ const Contact = () => {
             Les't <span className='text-accent'>contact me</span>
           </h2>
           {/* form */}
-          <form action='' className='flex-1 flex flex-col gap-6 w-full mx-auto '>
+          <form action="https://usebasin.com/f/b39126c75020" method="POST" className='flex-1 flex flex-col gap-6 w-full mx-auto '>
             {/*input group */}
             <div className='flex gap-x-6 w-full'>
-              <input type='text' placeholder='name' className='input' />
-              <input type='text' placeholder='f/name' className='input' />
+              <input type='text' placeholder='Full Name' name='full name' className='input' />
+              <input type='email' placeholder='Email' id="email" name='email' className='input' />
             </div>
-            <input type='email' placeholder='email' className='input' />
-            <textarea placeholder='message' className='textarea'></textarea>
+            {/* <input type='email' placeholder='email' className='input' /> */}
+            <textarea placeholder='message' className='textarea' name='message' ></textarea>
             <button className='btn rounded-full border  border-l-8 overflow-hidden  border-white/20 text-white text-xl cursor-pointer relative z-10 group '>
               Let's go
               <span

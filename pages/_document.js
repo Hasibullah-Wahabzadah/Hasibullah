@@ -1,11 +1,11 @@
-import Document, { Html, Head, Main, NextScript,title } from 'next/document';
+import Document, { Html, Head, Main, NextScript} from 'next/document';
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="eh">
         <Head>
-        <title> Hasibullah Wahabzdeh </title>
+          <title> Hasibullah Wahabzdeh </title>
           <link rel="icon" href="/v.png" />
         </Head>
         <body>

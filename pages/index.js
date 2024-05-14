@@ -42,7 +42,7 @@ const Home = () => {
           </motion.h1>
           {/* subtitle */}
           <motion.p 
-          variants={fadeIn('down', 0.3)}
+          variants={fadeIn('down', 0.2)}
           initial='hidden'
           animate='show'
           exit='hidden'
@@ -51,10 +51,15 @@ const Home = () => {
             I am a Web Developer, Web Designer, and UI/UX Implementation professional responsible for designing, developing, and implementing beautiful and effective websites and applications.
           </motion.p>
           {/* btn  */}
-          <div className='flex justify-center xl:hidden z-40'>
+          <motion.div 
+          variants={fadeIn('left', 0.5)}
+          initial='hidden'
+          animate='show'
+          exit='hidden'
+          className='flex justify-center xl:hidden z-10'>
             {/* <ProjectsBtn /> */}
             <Avatar  />
-          </div>
+          </motion.div>
           <motion.div
             variants={fadeIn('down', 0.4)}
             initial='hidden'
@@ -65,8 +70,6 @@ const Home = () => {
           >
             <ProjectsBtn />
           </motion.div>
-
-
         </div>
       </div>
       {/* image  */}

@@ -39,13 +39,30 @@
     @apply h-[52px];
   }
   .input {
-    @apply w-full h-[52px] rounded-lg pl-6 capitalize;
+    @apply w-full h-[52px] rounded-lg pl-6 ;
   }
   .input,
   .textarea {
     @apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/30 placeholder:font-light;
   }
   .textarea {
-    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
+    @apply w-full h-[180px] p-6  rounded-lg resize-none;
+  }
+  .selector:hover{
+    animation: energy 0.5s infinite;
+  }
+  @keyframes energy {
+    0%{
+      transform: scale(1 ,1);
+    }
+    25%{
+      transform: scale(0.9, 1.1);
+    }
+    50%{
+      transform: scale(1.2, 0.8);
+    }
+    75%{
+      transform: scale(0.95, 1.05);
+    }
   }
 }
