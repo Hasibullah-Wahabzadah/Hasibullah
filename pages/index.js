@@ -45,7 +45,7 @@ const Home = () => {
             animate='show'
             exit='hidden'
             className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 Nunito text-xl sm:text-xl z-10'>
-            I am a Web Developer, Web Designer, and UI/UX Implementation professional responsible for designing, developing, and implementing beautiful and effective websites and applications.
+           I professional responsible for designing, developing, and implementing beautiful and effective websites and applications
           </motion.p>
           {/* btn  */}
           <motion.div
@@ -53,7 +53,7 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='flex justify-center xl:hidden z-10'>
+            className='flex justify-center md:hidden xl:hidden z-10'>
             <Avatar />
           </motion.div>
           <motion.div

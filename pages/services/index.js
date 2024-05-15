@@ -20,7 +20,7 @@ const Services = () => {
             animate='show'
             exit='hidden'
 
-            className="text-3xl sm:text-5xl xl:mt-8 mb-4">
+            className="text-3xl sm:text-5xl xl:mt-8 mb-2 mt-5">
               My Services<span className=" text-accent">.</span>
             </motion.h2>
             <motion.p 

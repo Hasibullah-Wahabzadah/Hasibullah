@@ -12,7 +12,7 @@ import {
   from 'react-icons/fa';
 const Socials = () => {
   return (
-  <div className=" flex items-center gap-x-5 text-3xl ">
+  <div className=" flex items-center gap-x-5 text-2xl ">
     <Link target="_blank" href={'https://www.linkedin.com/in/hasibullah-wahabzadah-45884b26b/'} className=" hover:text-accent transition-all duration-300 text-gray-400">
     <FaLinkedin/>
     </Link>

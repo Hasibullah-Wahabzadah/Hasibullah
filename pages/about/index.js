@@ -97,7 +97,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-[190px] text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-[140px] text-center xl:text-left">
       <Circles />
       {/* avatar img  */}
       <motion.div
@@ -108,7 +108,7 @@ const About = () => {
         className=' hidden xl:flex absolute bottom-[400px] -left-[245px]'>
         <Avatar />
       </motion.div>
-      <div className="container mx-auto  flex flex-col items-center xl:flex-row gap-x-6 py-1">
+      <div className="container mx-auto  flex flex-col items-center xl:flex-row gap-x-6 py-5">
         {/* text  */}
         <div className=" flex-1 flex-col  flex justify-center ">
           <motion.h2
@@ -124,7 +124,7 @@ const About = () => {
             animate='show'
             exit='hidden'
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-4 xl:mt-3  items-center Nunito text-xl sm:text-xl">
-            Empowering businesses with captivating web design, I turn ideas into reality. Elevate your brand`s recognition and success with a stunning, efficient website, fueling sustainable growth and enhanced marketing.
+             Elevate your brand`s recognition and success with a stunning, efficient website, fueling sustainable growth and enhanced marketing.
           </motion.p>
           {/* Computer  */}
           <motion.div
@@ -183,7 +183,7 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className="flex flex-col w-full xl:max-w-[48%] h-[380px] py-5 ">
+          className="flex flex-col w-full xl:max-w-[48%] h-[380px] py-0 ">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-2">
             {aboutData.map((item, itemIndex) => {
               return (

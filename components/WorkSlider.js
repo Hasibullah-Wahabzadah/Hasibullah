@@ -77,7 +77,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[350px] sm:h-[580px]"
+      className="h-[330px] sm:h-[580px]"
     >
       {workSlides.slides.map((slide, index) => {
           return (
@@ -96,7 +96,7 @@ const WorkSlider = () => {
                     className=" absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0  group-hover:opacity-70 transition-all duration-700"
                     ></div>
                     {/* title */}
-                    <div className=" absolute bottom-1 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
+                    <div className=" absolute  translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
                       <div className="flex items-center gap-x-2  text-[13px] tracking-[0.2em]">
                         {/* title part 1 */}
                         {/* <div className="font-bold delay-100">LIVE</div> */}
