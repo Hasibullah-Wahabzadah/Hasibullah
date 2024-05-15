@@ -98,13 +98,7 @@ const WorkSlider = () => {
                     {/* title */}
                     <div className=" absolute  translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
                       <div className="flex items-center gap-x-2  text-[13px] tracking-[0.2em]">
-                        {/* title part 1 */}
-                        {/* <div className="font-bold delay-100">LIVE</div> */}
-                        {/* title part 2 */}
-                        {/* <div className="font-bold translate-y-[500%] group-hover:translate-y-0 translate-all duration-300 delay-150">PROJECT</div> */}
-                        {/* icon */}
-                       
-                        <a href={image.link} className=" font-bold text-2xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200 " target="_blank">LIVE PROJECT</a>
+                        <a href={image.link} className="mt-[150px] font-bold text-3xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200 " target="_blank">LIVE PROJECT</a>
                       </div>
                     </div>
                   </div>
