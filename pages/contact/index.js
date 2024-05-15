@@ -29,7 +29,7 @@ const Contact = () => {
                 className="absolute w-full h-[620px] -top-5 -left-2 bg-red-700/80 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-right"
               ></span>
               <span
-                className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-3.5 left-[160px] sm:left-[300px] z-10"
+                className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-3.5 left-[160px] sm:left-[320px] z-10 font-bold text-xl"
               >Send
               </span>
             </button>
