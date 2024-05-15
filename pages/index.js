@@ -20,9 +20,9 @@ const Home = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className="text-2xl sm:text-3xl -mt-16">
+          className="text-3xl sm:text-4xl -mt-16">
             Hi! I'm Hasibullah Wahabzadah <br /> And I'm
-            <span className="text-accent" >
+            <span className="text-accent font-semibold" >
               <Typewriter
                 options={{
                   strings: ['Web Developer', 'Front-end Developer', 'UI/UX Implementation'],
@@ -47,7 +47,7 @@ const Home = () => {
           animate='show'
           exit='hidden'
   
-          className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
+          className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 Nunito text-xl sm:text-xl z-10'>
             I am a Web Developer, Web Designer, and UI/UX Implementation professional responsible for designing, developing, and implementing beautiful and effective websites and applications.
           </motion.p>
           {/* btn  */}

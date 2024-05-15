@@ -20,7 +20,7 @@ const Services = () => {
             animate='show'
             exit='hidden'
 
-            className="text-5xl xl:mt-8 mb-4">
+            className="text-3xl sm:text-5xl xl:mt-8 mb-4">
               My Services<span className=" text-accent">.</span>
             </motion.h2>
             <motion.p 
@@ -28,7 +28,7 @@ const Services = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="mb-4 max-w-[400px] mx-auto lg:mx-0"> 
+            className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-xl sm:text-xl Nunito"> 
               I strive to help businesses thrive by providing the best services to their customers and ensuring their satisfaction so they can succeed in their ventures.
               </motion.p>
           </div>

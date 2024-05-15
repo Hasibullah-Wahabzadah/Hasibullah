@@ -29,7 +29,7 @@ const Work = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0">
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 Nunito text-xl">
               Here, I proudly present my achievements and sample works, crafted with passion and enthusiasm. I hope these examples introduce you to my abilities and talents.
             </motion.p>
           </div>

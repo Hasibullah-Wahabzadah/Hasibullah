@@ -129,14 +129,15 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="text-2xl sm:text-4xl">Turning ideas into reality is what I do as a<span className=" text-accent"> Web Developer</span></motion.h2>
+            className="text-3xl sm:text-4xl">Turning ideas into reality is what I do as a
+            <span className=" text-accent font-semibold"> Web Developer</span></motion.h2>
           <motion.p
             variants={fadeIn('right', 0, 4)}
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-4 xl:mt-3  items-center ">
-            With my professional website design services, you can take your brand and business to a new level of recognition and success. With a beautiful, unique, and efficient website, you can achieve sustainable growth for your business and elevate its marketing to a higher level.
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-4 xl:mt-3  items-center Nunito text-xl sm:text-xl">
+            Empowering businesses with captivating web design, I turn ideas into reality. Elevate your brand's recognition and success with a stunning, efficient website, fueling sustainable growth and enhanced marketing.
           </motion.p>
           {/* Computer  */}
           <motion.div
@@ -151,8 +152,8 @@ const About = () => {
                 <di v className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={2} duration={5} /> +
                 </di>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px]">
-                  Years of experience
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px] Nunito">
+                  <p> Years of experience </p>
                 </div>
               </div>
 
@@ -161,8 +162,8 @@ const About = () => {
                 <di v className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={50} duration={5} /> +
                 </di>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px]">
-                  Satisfied clients
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px] Nunito">
+                 <p>Satisfied<br/> clients</p> 
                 </div>
               </div>
 
@@ -171,8 +172,8 @@ const About = () => {
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={650} duration={5} /> +
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px]">
-                  Finisihed projects
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px] Nunito">
+                  <p> Finisihed projects</p>
                 </div>
               </div>
 
@@ -181,8 +182,8 @@ const About = () => {
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={2} duration={5} /> +
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px]">
-                  Winning awards
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px] Nunito">
+                   <p>Winning<br/> awards</p>
                 </div>
               </div>
 
@@ -195,13 +196,13 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className="flex flex-col w-full xl:max-w-[48%] h-[380px] sm:py-2 pl-9">
+          className="flex flex-col w-full xl:max-w-[48%] h-[380px] py-5 ">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-2">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
-                  className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:-left-0 `}
+                  className={`${index === itemIndex && 'text-accent after:w-[100%] Nunito after:bg-accent after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-2xl relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:-left-0 text-xl `}
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
@@ -209,16 +210,15 @@ const About = () => {
               );
             })}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 text-center xl:items-start">
-            {aboutData[index].info.map((item, itemIndex) => {
+          <div className="py-1 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 text-center xl:items-start">
+            {aboutData[index] && aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
-                  className="flex-1 flex flex-col md:flex-row  gap-x-2 items-center text-white/60"
+                  className="flex-1 flex flex-col md:flex-row  gap-x-2 Nunito items-center text-white/60"
                   key={itemIndex}>
                   {/* title */}
-                  <div className=" font-light">{item.title}</div>
-                  <br />
-                  <div className="text-white truncate">{item.stage}</div>
+                  <div className=" font-light text-xl">{item.title}</div>
+                  <div className="text-white truncate text-xl">{item.stage}</div>
                   {/* icons */}
                   <div className="flex flex-wrap justify-center md:justify-start gap-x-2">
                     {item.icons?.map((icon, iconIndex) => (

@@ -21,7 +21,7 @@ const Contact = () => {
             Les't <span className='text-accent'>contact me</span>
           </h2>
           {/* form */}
-          <form action="https://usebasin.com/f/b39126c75020" method="POST" className='flex-1 flex flex-col gap-6 w-full mx-auto '>
+          <form action="https://usebasin.com/f/b39126c75020" method="POST" className='flex-1 flex flex-col gap-6 w-full mx-auto Nunito'>
             {/*input group */}
             <div className='flex gap-x-6 w-full'>
               <input type='text' placeholder='Full Name' name='full name' className='input' />

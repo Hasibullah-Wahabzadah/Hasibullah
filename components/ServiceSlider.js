@@ -80,9 +80,9 @@ const ServiceSlider = () => {
             {/* icons  */}
             <div className="text-4xl mb-3 text-center">{itme.icon}</div>
             {/* title & desc  */}
-            <div className="mb-5">
-              <div className="mb-2 text-lg">{itme.title}</div>
-              <p className="max-w-[350px] leading-normal">{itme.description}</p>
+            <div className="mb-5 ">
+              <div className="mb-2 text-xl">{itme.title}</div>
+              <p className="max-w-[350px] leading-normal Nunito">{itme.description}</p>
             </div>
             {/* arraw */}
           </div>
