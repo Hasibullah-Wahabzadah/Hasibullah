@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 
 // Components 
 import Avatar from "../../components/Avatar";
@@ -19,7 +19,6 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
   FaFigma,
   FaGitAlt,
   FaGithubSquare
@@ -40,20 +39,20 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <DiSass />,
-          <BsBootstrapFill />,
-          <SiTailwindcss />,
-          <FaJs />,
-          <FaReact />,
-          <FaGitAlt />,
-          <FaGithubSquare />
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <DiSass key="sass" />,
+          <BsBootstrapFill key="bootstrap" />,
+          <SiTailwindcss key="tailwind" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <FaGitAlt key="git" />,
+          <FaGithubSquare key="github" />
         ],
       },
       {
         title: 'UI/UX Implementation',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<FaFigma key="figma" />, <SiAdobexd key="adobexd" />, <SiAdobephotoshop key="photoshop" />],
       },
     ],
   },
@@ -62,15 +61,18 @@ const aboutData = [
     info: [
       {
         title: 'CS OF CS at Herat University',
-        stage: '2022'
+        stage: '2022',
+        key: "herat"
       },
       {
         title: 'Ghalib University - Programming class',
         stage: '2022 - 2023',
+        key: "ghalib"
       },
       {
         title: 'Wassa code4Fun Web class',
         stage: '2023 - 2024',
+        key: "wassa"
       },
     ],
   },
@@ -80,30 +82,15 @@ const aboutData = [
       {
         title: 'Wassa code4Fun Web class',
         stage: 'Certificate',
+        key: "wassa-award"
       },
       {
         title: 'Ghalib University - Programming class',
         stage: 'Certificate',
+        key: "ghalib-award"
       },
     ],
   },
-  // {
-  //   title: 'credentials',
-  //   info: [
-  //     {
-  //       title: 'Web Development - ABC University, LA, CA',
-  //       stage: '2011',
-  //     },
-  //     {
-  //       title: 'Computer Science Diploma - AV Technical Institute',
-  //       stage: '2009',
-  //     },
-  //     {
-  //       title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-  //       stage: '2006',
-  //     },
-  //   ],
-  // },
 ];
 
 const About = () => {
@@ -137,7 +124,7 @@ const About = () => {
             animate='show'
             exit='hidden'
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-4 xl:mt-3  items-center Nunito text-xl sm:text-xl">
-            Empowering businesses with captivating web design, I turn ideas into reality. Elevate your brand's recognition and success with a stunning, efficient website, fueling sustainable growth and enhanced marketing.
+            Empowering businesses with captivating web design, I turn ideas into reality. Elevate your brand`s recognition and success with a stunning, efficient website, fueling sustainable growth and enhanced marketing.
           </motion.p>
           {/* Computer  */}
           <motion.div
@@ -149,9 +136,9 @@ const About = () => {
             <div className="flex flex-1 xl:gap-x-6 ">
               {/* experience */}
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <di v className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={2} duration={5} /> +
-                </di>
+                </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px] Nunito">
                   <p> Years of experience </p>
                 </div>
@@ -159,11 +146,11 @@ const About = () => {
 
               {/* clients */}
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <di v className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={50} duration={5} /> +
-                </di>
+                </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px] Nunito">
-                 <p>Satisfied<br/> clients</p> 
+                  <p>Satisfied<br/> clients</p> 
                 </div>
               </div>
 
