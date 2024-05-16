@@ -137,7 +137,7 @@ const About = () => {
               {/* experience */}
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={2} duration={5} /> +
+                  <CountUp start={0} end={2} duration={7} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px] Nunito">
                   <p> Years of experience </p>
@@ -147,7 +147,7 @@ const About = () => {
               {/* clients */}
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={50} duration={5} /> +
+                  <CountUp start={0} end={5} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px] Nunito">
                   <p>Satisfied<br/> clients</p> 
@@ -157,7 +157,7 @@ const About = () => {
               {/* projects */}
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={6} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px] Nunito">
                   <p> Finisihed projects</p>
@@ -167,7 +167,7 @@ const About = () => {
               {/* awards */}
               <div className=" relative flex-1 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={2} duration={5} /> +
+                  <CountUp start={0} end={2} duration={7} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w[100px] Nunito">
                    <p>Winning<br/> awards</p>
@@ -183,7 +183,7 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className="flex flex-col w-full xl:max-w-[48%] h-[380px] py-2 ">
+          className="flex flex-col w-full xl:max-w-[48%] h-[380px] py-2 xl:py-8 ">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-2">
             {aboutData.map((item, itemIndex) => {
               return (
