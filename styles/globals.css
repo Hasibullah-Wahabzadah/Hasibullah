@@ -77,4 +77,235 @@ body{
       transform: scale(0.95, 1.05);
     }
   }
+
+/*   
+  @media (max-width: 320px) {
+    .LinkedinBtn,
+    .githubBtn,
+    .Btn,
+    .whatsappBtn {
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+    }
+  } */
+  
+  
+
+  /* Linkedin */
+  .LinkedinBtn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .LinkedinBtn .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    letter-spacing: 1px; /* Adjusted letter spacing */
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  .LinkedinBtn .BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0077b5;
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  
+  .LinkedinBtn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box shadow effect */
+  }
+  
+  .LinkedinBtn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .LinkedinBtn:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+  }
+  
+  /* github */
+
+  .githubBtn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .githubBtn .svgContainer1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    letter-spacing: 1px; /* Adjusted letter spacing */
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  .githubBtn .BG1 {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #020506d2;
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  
+  .githubBtn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box shadow effect */
+  }
+  
+  .githubBtn:hover .BG1 {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .githubBtn:hover .svgContainer1 {
+    background-color: rgba(156, 156, 156, 0.466);
+  }
+  /* instagrm */
+  .Btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  .BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all .3s;
+  }
+  
+  .Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .Btn:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+  }
+  /* whatsapp */
+  .whatsappBtn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .whatsappBtn .svgContainer2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    letter-spacing: 1px; /* Adjusted letter spacing */
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  .whatsappBtn .BG2 {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #08c544d2;
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  
+  .whatsappBtn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box shadow effect */
+  }
+  
+  .whatsappBtn:hover .BG2 {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .whatsappBtn:hover .svgContainer2 {
+    background-color: rgba(156, 156, 156, 0.466);
+  }
+  
 }

@@ -4,7 +4,7 @@ import { easeInOut, motion } from 'framer-motion';
 import Avatar from '../components/Avatar';
 import { fadeIn } from '../variants';
 import ParticlesContainer from '../components/ParticlesContainer';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const Home = () => {
   return (
@@ -45,7 +45,7 @@ const Home = () => {
             animate='show'
             exit='hidden'
             className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 Nunito text-xl sm:text-xl z-10'>
-           I professional responsible for designing, developing, and implementing beautiful and effective websites and applications
+           I am professional at designing, developing and implementing beautiful & effective websites and applications.
           </motion.p>
           {/* btn  */}
           <motion.div
@@ -70,7 +70,7 @@ const Home = () => {
       {/* image  */}
       <div className='w-[1200px] h-full absolute right-0 bottom-0'>
         {/* bg img  */}
-        <div className='bg-explosion bg-cover bg-right bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0'></div>
+        <a href="https://ibb.co/c2Pk8z5"><img src="https://i.ibb.co/BTmc68D/bg-explosion.png" alt="bg-explosion" border="0" width={100} height={100} className=' bg-cover bg-right bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0'/></a>
         {/* particles  */}
         <ParticlesContainer />
         {/* avatar img  */}
