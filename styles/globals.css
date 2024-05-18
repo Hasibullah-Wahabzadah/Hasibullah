@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-body{
-  font-family: 'Ubuntu Sans' , sans-serif;
+body {
+  font-family: "Ubuntu Sans", sans-serif;
 }
 
-.Nunito{
-  font-family: 'Nunito', sans-serif;
+.Nunito {
+  font-family: "Nunito", sans-serif;
 }
 
 @tailwind base;
@@ -51,7 +51,7 @@ body{
     @apply h-[52px];
   }
   .input {
-    @apply w-full h-[52px] rounded-lg pl-6 ;
+    @apply w-full h-[52px] rounded-lg pl-6;
   }
   .input,
   .textarea {
@@ -60,37 +60,23 @@ body{
   .textarea {
     @apply w-full h-[180px] p-6  rounded-lg resize-none;
   }
-  .selector:hover{
+  .selector:hover {
     animation: energy 0.5s infinite;
   }
   @keyframes energy {
-    0%{
-      transform: scale(1 ,1);
+    0% {
+      transform: scale(1, 1);
     }
-    25%{
+    25% {
       transform: scale(0.9, 1.1);
     }
-    50%{
+    50% {
       transform: scale(1.2, 0.8);
     }
-    75%{
+    75% {
       transform: scale(0.95, 1.05);
     }
   }
-
-/*   
-  @media (max-width: 320px) {
-    .LinkedinBtn,
-    .githubBtn,
-    .Btn,
-    .whatsappBtn {
-      width: 10px;
-      height: 10px;
-      border-radius: 3px;
-    }
-  } */
-  
-  
 
   /* Linkedin */
   .LinkedinBtn {
@@ -106,7 +92,7 @@ body{
     cursor: pointer;
     transition: all 0.3s;
   }
-  
+
   .LinkedinBtn .svgContainer {
     width: 100%;
     height: 100%;
@@ -120,7 +106,7 @@ body{
     transition: all 0.3s;
     border: 1px solid rgba(156, 156, 156, 0.466);
   }
-  
+
   .LinkedinBtn .BG {
     position: absolute;
     content: "";
@@ -132,20 +118,20 @@ body{
     pointer-events: none;
     transition: all 0.3s;
   }
-  
+
   .LinkedinBtn:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box shadow effect */
   }
-  
+
   .LinkedinBtn:hover .BG {
     transform: rotate(35deg);
     transform-origin: bottom;
   }
-  
+
   .LinkedinBtn:hover .svgContainer {
     background-color: rgba(156, 156, 156, 0.466);
   }
-  
+
   /* github */
 
   .githubBtn {
@@ -161,7 +147,7 @@ body{
     cursor: pointer;
     transition: all 0.3s;
   }
-  
+
   .githubBtn .svgContainer1 {
     width: 100%;
     height: 100%;
@@ -175,28 +161,28 @@ body{
     transition: all 0.3s;
     border: 1px solid rgba(156, 156, 156, 0.466);
   }
-  
+
   .githubBtn .BG1 {
     position: absolute;
     content: "";
     width: 100%;
     height: 100%;
-    background: #020506d2;
+    background: #000;
     z-index: -1;
     border-radius: 9px;
     pointer-events: none;
     transition: all 0.3s;
   }
-  
+
   .githubBtn:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box shadow effect */
   }
-  
+
   .githubBtn:hover .BG1 {
     transform: rotate(35deg);
     transform-origin: bottom;
   }
-  
+
   .githubBtn:hover .svgContainer1 {
     background-color: rgba(156, 156, 156, 0.466);
   }
@@ -213,9 +199,9 @@ body{
     /* overflow: hidden; */
     border-radius: 7px;
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s;
   }
-  
+
   .svgContainer {
     width: 100%;
     height: 100%;
@@ -226,31 +212,52 @@ body{
     backdrop-filter: blur(4px);
     letter-spacing: 0.8px;
     border-radius: 10px;
-    transition: all .3s;
+    transition: all 0.3s;
     border: 1px solid rgba(156, 156, 156, 0.466);
   }
-  
+
   .BG {
     position: absolute;
     content: "";
     width: 100%;
     height: 100%;
     background: #f09433;
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: -moz-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
     z-index: -1;
     border-radius: 9px;
     pointer-events: none;
-    transition: all .3s;
+    transition: all 0.3s;
   }
-  
+
   .Btn:hover .BG {
     transform: rotate(35deg);
     transform-origin: bottom;
   }
-  
+
   .Btn:hover .svgContainer {
     background-color: rgba(156, 156, 156, 0.466);
   }
@@ -268,7 +275,7 @@ body{
     cursor: pointer;
     transition: all 0.3s;
   }
-  
+
   .whatsappBtn .svgContainer2 {
     width: 100%;
     height: 100%;
@@ -282,7 +289,7 @@ body{
     transition: all 0.3s;
     border: 1px solid rgba(156, 156, 156, 0.466);
   }
-  
+
   .whatsappBtn .BG2 {
     position: absolute;
     content: "";
@@ -294,18 +301,17 @@ body{
     pointer-events: none;
     transition: all 0.3s;
   }
-  
+
   .whatsappBtn:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box shadow effect */
   }
-  
+
   .whatsappBtn:hover .BG2 {
     transform: rotate(35deg);
     transform-origin: bottom;
   }
-  
+
   .whatsappBtn:hover .svgContainer2 {
     background-color: rgba(156, 156, 156, 0.466);
   }
-  
 }
