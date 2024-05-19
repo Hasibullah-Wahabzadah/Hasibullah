@@ -19,7 +19,7 @@ const Home = () => {
             animate='show'
             exit='hidden'
             className="text-3xl sm:text-4xl -mt-16">
-            Hi! I&apos;m Hasibullah Wahabzadah <br /> And I&apos;m
+            Hi! I&apos;m Hasibullah Wahabzadah <br /> And I am a
             <span className="text-accent font-semibold">
               <Typewriter
                 options={{
