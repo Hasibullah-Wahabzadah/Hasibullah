@@ -23,7 +23,7 @@ const Home = () => {
             <span className="text-accent font-semibold">
               <Typewriter
                 options={{
-                  strings: ['Web Developer', 'Front-end Developer', 'UI/UX Implementation'],
+                  strings: ['Web Developer', 'Front-end Developer', 'UI/UX Implementor'],
                   autoStart: true,
                   loop: true,
                   delay: 100,
