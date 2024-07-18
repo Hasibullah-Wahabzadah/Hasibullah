@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
        <Head>
-        <title>Hasibullah Wahabzdeh</title>
+        <title>Hasibullah Wahabzdah</title>
         <link rel="icon" href="/v.png" />
       </Head>
     <Layout>

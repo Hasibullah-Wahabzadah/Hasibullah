@@ -70,7 +70,7 @@ const Home = () => {
       {/* image  */}
       <div className='w-[1200px] h-full absolute right-0 bottom-0'>
         {/* bg img  */}
-        <a href="https://ibb.co/c2Pk8z5"><img src="https://i.ibb.co/BTmc68D/bg-explosion.png" alt="bg-explosion" border="0" width={100} height={100} className=' bg-cover bg-right bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0'/></a>
+        <a><img src="/bg-explosion.png" alt="bg-explosion" border="0" width={100} height={100} className=' bg-cover bg-right bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0'/></a>
         {/* particles  */}
         <ParticlesContainer />
         {/* avatar img  */}
